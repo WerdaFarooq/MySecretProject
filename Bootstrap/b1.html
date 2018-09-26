@@ -36,6 +36,37 @@ body{
 		font-size: 21px;
 		font-weight: 200;
 	}
+	
+		/* Carousel Styling */
+.slide0{
+  background-image: url('l1.jpg');
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.slide1{
+  background-image: url('fancy1.gif');
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.slide2{
+  background-image: url('crystal1.gif');
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.carousel-caption h1{
+  font-size: 5.4em;
+  font-family: 'Pacifico', cursive;
+  padding-bottom: .4em;
+}
+.carousel-caption p{
+  font-size: 2em;
+}
 </style>
 </head>
 <body>
@@ -58,6 +89,47 @@ body{
 			<span id="title">Think Thank!</span>
 			<p id="slogan">Video Tutorials is just about Everything you know.....</p>
 		</div>
+	</div>
+	
+<!-- Carousel Slider -->
+	<div id="theCarousel" class="carousel slide" data-ride="carousel">	
+		<ol class="carousel-indicators">
+			<li data-target="#theCarousel" data-slide-to="0" class="active"></li>
+			<li data-target="#theCarousel" data-slide-to="1" ></li>
+			<li data-target="#theCarousel" data-slide-to="2" ></li>
+	</ol>
+	<div class="carousel-inner">
+		<div class="item active">
+			<div class="slide0"></div>
+				<div class="carousel-caption">
+					<h1>Amazing Backgrouds</h1>
+					<p>Here you can find thousands of backgrounds for Free</p>
+					<p> <a href="#" class="btn btn-primary btn-sm">Get Them Now</a></p>
+				</div>
+		</div>
+		<div class="item">
+			<div class="slide1"></div>
+				<div class="carousel-caption">
+					<h1>New Colourful Backgrounds</h1>
+					<p>Here you can find thousands of backgrounds for Free</p>
+				</div>
+		</div>
+		<div class="item">
+			<div class="slide2"></div>
+				<div class="carousel-caption">
+					<h1>Rare Illustrations</h1>
+					<p>Here you can find thousands of backgrounds for Free</p>
+				</div>
+		</div>
+
+	</div>
+
+	<a class="left carousel-control" href="=#theCarousel" data-slide="prev" >
+	<span class="glyphicon glyphicon-chevron-left"></span>
+	</a>
+	<a class="right carousel-control" href="=#theCarousel" data-slide="next">
+	<span class="glyphicon glyphicon-chevron-right"></span>
+	</a>
 	</div>
 	
 <div class="container">
